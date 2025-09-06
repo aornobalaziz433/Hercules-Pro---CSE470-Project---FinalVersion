@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-Optimized Fitness Journey</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-flex">
+      <a href="#" class="logo" aria-label="Hercules Pro Home">
+        <img src="assets/hercules-pro-logo.jpg.png" alt="Hercules Pro Logo" class="logo-img" style="height: 2.2rem; width: auto; vertical-align: middle; margin-right: 0.5rem;">
+        <span class="logo-text">Hercules Pro</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#how-it-works">How it Works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+      <div id="account-area"></div>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Welcome to the perfect place for enhancing your fitness and wellbeing</h1>
+        <p>Get your desired fitness goal by us, make it a best investment on you wishing you a very best journey with us</p>
+        <a href="register.html" class="btn btn-primary">Let's Start</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1517960413843-0aee8e2d471c?auto=format&fit=crop&w=800&q=80" alt="" aria-hidden="true" class="hero-img-decorative">
+      </div>
+    </section>
+    <section class="features" id="service">
+      <div class="container">
+        <h2>Boost Your Routine<br>With AI Insights</h2>
+        <p class="features-desc">Boost Your Fitness With AI-Powered Workouts. Enjoy Personalized Meals Tailored To You.</p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon"></div>
+            <h3>Training Plan</h3>
+            <p>Workouts Tailored To Your Goals For Optimal Results.</p>
+            <a href="training-programs.html" class="btn btn-secondary">Start Plan</a>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"></div>
+            <h3>Smart Meal Plans</h3>
+            <p>Nutrition Tailored To Your Lifestyle And Goals For Optimal Results.</p>
+            <a href="meal-plans.html" class="btn btn-secondary">See Meal</a>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"></div>
+            <h3>Smart Calorie Counter</h3>
+            <p>Track Your Daily Calorie Intake With Bengali Food Database & AI Insights.</p>
+            <a href="bengali-calorie-calculator.html" class="btn btn-secondary">Count Calories</a>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"></div>
+            <h3>Product Marketplace</h3>
+            <p>Discover Fitness Products & Services From Professional Trainers.</p>
+            <a href="product-marketplace.html" class="btn btn-secondary">Browse Products</a>
+          </div>
+        </div>
+        
+        <!-- Health Chatbot Section -->
+        <div class="chatbot-section">
+          <div class="chatbot-container">
+            <div class="chatbot-header">
+              <h3>🤖 Health Assistant</h3>
+              <p>Ask me anything about fitness, nutrition, or health!</p>
+            </div>
+            <div class="chatbot-widget" id="chatbotWidget">
+              <div class="chatbot-toggle" id="chatbotToggle">
+                <span class="chatbot-icon">💬</span>
+                <span class="chatbot-text">Chat with Health Assistant</span>
+              </div>
+              <div class="chatbot-window" id="chatbotWindow" style="display: none;">
+                <div class="chatbot-messages" id="chatbotMessages">
+                  <div class="message bot-message">
+                    <div class="message-content">
+                      <p>Hello! I'm your Health Assistant. I can help you with:</p>
+                      <ul>
+                        <li>Fitness and exercise advice</li>
+                        <li>Nutrition and diet questions</li>
+                        <li>Health and wellness tips</li>
+                        <li>Workout recommendations</li>
+                      </ul>
+                      <p>What would you like to know?</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="chatbot-input">
+                  <input type="text" id="chatbotInput" placeholder="Ask me about health, fitness, or nutrition...">
+                  <button id="chatbotSend">Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Community & Workout Tracker Section -->
+    <section class="community-workout-section">
+      <div class="container">
+        <div class="community-workout-grid">
+          <!-- Community Feature -->
+          <div class="community-feature">
+            <h2>Fitness Community</h2>
+            <p>Connect with fellow fitness enthusiasts, share your journey, and get inspired by others</p>
+            <div class="community-preview">
+              <div class="community-stats">
+                <div class="stat-item">
+                  <span class="stat-number" id="totalPosts">0</span>
+                  <span class="stat-label">Posts</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number" id="totalLikes">0</span>
+                  <span class="stat-label">Likes</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number" id="totalViews">0</span>
+                  <span class="stat-label">Views</span>
+                </div>
+              </div>
+              <div class="community-actions">
+                <a href="community.html" class="btn btn-primary">Join Community</a>
+                <a href="community.html" class="btn btn-secondary">View Posts</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Enhanced Workout Tracker -->
+          <div class="workout-tracker">
+            <h2>Daily Workout Goals</h2>
+            <p>Add multiple workouts and track your progress throughout the day</p>
+            <div class="goal-tracker">
+              <div class="goal-input-section">
+                <h4>Add New Workout</h4>
+                <div class="workout-add-form">
+                  <div class="workout-input-row">
+                    <div class="workout-input-group">
+                      <label for="workoutName">Workout Name</label>
+                      <input type="text" id="workoutName" placeholder="e.g., Morning Cardio, Evening Strength">
+                    </div>
+                    <div class="workout-input-group">
+                      <label for="workoutAmount">Amount (min)</label>
+                      <input type="number" id="workoutAmount" min="5" max="180" placeholder="30">
+                    </div>
+                    <div class="workout-input-group">
+                      <label for="workoutType">Type</label>
+                      <select id="workoutType">
+                        <option value="cardio">Cardio</option>
+                        <option value="strength">Strength Training</option>
+                        <option value="flexibility">Flexibility</option>
+                        <option value="mixed">Mixed</option>
+                      </select>
+                    </div>
+                    <div class="workout-input-group">
+                      <label for="intensityLevel">Intensity</label>
+                      <select id="intensityLevel">
+                        <option value="low">Low</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="high">High</option>
+                      </select>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" onclick="addWorkout()">Add Workout</button>
+                </div>
+              </div>
+              
+              <div class="workout-list-section">
+                <h4>Today's Workouts</h4>
+                <div class="workout-list" id="workoutList">
+                  <div class="no-workouts" id="noWorkouts">
+                    <p>No workouts added yet. Add your first workout above!</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="goal-progress">
+                <h4>Today's Summary</h4>
+                <div class="progress-cards">
+                  <div class="progress-card">
+                    <div class="progress-icon">Total</div>
+                    <div class="progress-info">
+                      <span class="progress-label">Total Workouts</span>
+                      <span class="progress-value" id="totalWorkouts">0</span>
+                      <span class="progress-unit">workouts</span>
+                    </div>
+                  </div>
+                  
+                  <div class="progress-card">
+                    <div class="progress-icon">Duration</div>
+                    <div class="progress-info">
+                      <span class="progress-label">Total Duration</span>
+                      <span class="progress-value" id="totalDuration">0</span>
+                      <span class="progress-unit">min</span>
+                    </div>
+                  </div>
+                  
+                  <div class="progress-card">
+                    <div class="progress-icon">Calories</div>
+                    <div class="progress-info">
+                      <span class="progress-label">Calories Burned</span>
+                      <span class="progress-value" id="totalCalories">0</span>
+                      <span class="progress-unit">cal</span>
+                    </div>
+                  </div>
+                  
+                  <div class="progress-card">
+                    <div class="progress-icon">Progress</div>
+                    <div class="progress-info">
+                      <span class="progress-label">Completed</span>
+                      <span class="progress-value" id="completedWorkouts">0</span>
+                      <span class="progress-unit">/<span id="totalWorkoutsCount">0</span></span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="workout-actions">
+                  <button class="btn btn-secondary" onclick="clearAllWorkouts()">Clear All</button>
+                  <button class="btn btn-primary" onclick="exportWorkoutData()">Export Data</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Events Section -->
+    <section class="events-section">
+      <div class="container">
+        <div class="events-header">
+          <h2>Upcoming Fitness Events</h2>
+          <p>Join exciting events organized by our professional trainers</p>
+          <a href="events.html" class="btn btn-primary">View All Events</a>
+        </div>
+        
+        <div class="events-grid" id="eventsGrid">
+          <div class="no-events" id="noEvents">
+            <div class="no-events-content">
+              <span class="no-events-icon">📅</span>
+              <h3>No Events Yet</h3>
+              <p>Check back soon for exciting fitness events from our professional trainers!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="plans" id="pricing">
+      <div class="container">
+        <h2>Perfect Plan For Your Fitness Goals</h2>
+        <p>Choose The Perfect Plan That Fits Your Fitness Goals And Start Your Journey Today.</p>
+        <div class="plans-grid">
+          <div class="plan-card">
+            <h3>Basic Plan</h3>
+            <div class="plan-price">৳199.90/<span>mo</span></div>
+            <ul>
+              <li>AI Workout Plans</li>
+              <li>Basic Meal Guide</li>
+              <li>Progress Tracker</li>
+            </ul>
+            <a href="#" class="btn btn-secondary">Choose Plan</a>
+          </div>
+          <div class="plan-card plan-card--pro">
+            <h3>Pro Plan</h3>
+            <div class="plan-price">৳399.90/<span>mo</span></div>
+            <ul>
+              <li>Everything in Basic</li>
+              <li>Personalized Meal Plans</li>
+              <li>Advanced Progress Analytics</li>
+              <li>Priority Support</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Choose Plan</a>
+          </div>
+          <div class="plan-card">
+            <h3>Elite Plan</h3>
+            <div class="plan-price">৳799.90/<span>mo</span></div>
+            <ul>
+              <li>All Pro Features</li>
+              <li>1-on-1 AI Coach</li>
+              <li>Exclusive Content</li>
+              <li>Early Access to New Features</li>
+            </ul>
+            <a href="#" class="btn btn-secondary">Choose Plan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>2025 Hercules Pro</p>
+    </div>
+  </footer>
+  <script src="scripts/main.js"></script>
+</body>
+</html> 
